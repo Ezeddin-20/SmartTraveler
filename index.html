@@ -50,6 +50,9 @@
   .feature { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
   .feature h3 { font-size: 18px; margin: 0 0 2px; }
   .feature p { color: var(--muted); font-size: 16px; margin: 0; }
+  .telegram { margin-top: 34px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px 24px 24px; text-align: center; }
+  .telegram h2 { margin-top: 0; }
+  .telegram p { color: var(--muted); margin: 0 0 16px; }
   footer { text-align: center; color: var(--muted); font-size: 15px; margin-top: 40px; }
   [hidden] { display: none !important; }
 </style>
@@ -90,9 +93,15 @@
     <li data-t="step1"></li>
     <li data-t="step2"></li>
     <li data-t="step3"></li>
+    <li data-t="step4"></li>
   </ol>
   <h2 data-t="featuresTitle"></h2>
   <ul class="grid" id="features"></ul>
+  <section class="telegram" aria-labelledby="tgTitle">
+    <h2 id="tgTitle" data-t="tgTitle"></h2>
+    <p data-t="tgText"></p>
+    <a class="download" href="https://t.me/EzTechApps" data-t="tgButton"></a>
+  </section>
   <footer data-t="footer"></footer>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -113,7 +122,11 @@
       installTitle: "طريقة التثبيت",
       step1: "اضغط على زر التنزيل وانتظر حتى ينتهي.",
       step2: "افتح الملف. إذا طلب الهاتف ذلك، اسمح بـ «التثبيت من هذا المصدر».",
-      step3: "اضغط «تثبيت». التحديثات القادمة تصلك من داخل التطبيق: الإعدادات ← البحث عن تحديثات.",
+      step3: "إذا ظهرت رسالة من Google Play Protect تقول إن التطبيق غير معروف أو تنصح بفحصه، فهذا طبيعي لأن التطبيق لا يُنزَّل من متجر Google Play. التطبيق آمن ومجاني: اضغط «مزيد من التفاصيل» ثم «التثبيت على أي حال».",
+      step4: "اضغط «تثبيت». التحديثات القادمة تصلك من داخل التطبيق تلقائياً.",
+      tgTitle: "انضم إلى قناتي على تيليجرام",
+      tgText: "لتقترح تطبيقات جديدة، وتحمّل كل تطبيقاتي، وتتابع التحديثات أولاً بأول.",
+      tgButton: "الانضمام إلى القناة",
       featuresTitle: "ماذا يفعل المتجول الذكي؟",
       features: [
         ["أين أنا", "يصف موقعك بالتفصيل: الشارع الذي أنت فيه، وأقرب تقاطع، وما حولك."],
@@ -143,7 +156,11 @@
       installTitle: "How to install",
       step1: "Tap the download button and wait until it finishes.",
       step2: "Open the file. If your phone asks, allow “Install from this source”.",
-      step3: "Tap “Install”. Future updates arrive inside the app: Settings → Check for updates.",
+      step3: "If a Google Play Protect message says the app is unknown or suggests scanning it, that is normal: the app doesn't come from the Google Play Store. It is safe and free: tap “More details”, then “Install anyway”.",
+      step4: "Tap “Install”. Future updates arrive inside the app automatically.",
+      tgTitle: "Join my Telegram channel",
+      tgText: "Suggest new apps, download all my apps and get the updates first.",
+      tgButton: "Join the channel",
       featuresTitle: "What does Smart Traveler do?",
       features: [
         ["Where am I", "Describes your position in detail: the street you're on, the nearest crossing and what's around you."],
@@ -173,7 +190,11 @@
       installTitle: "Comment l'installer",
       step1: "Appuyez sur le bouton de téléchargement et attendez la fin.",
       step2: "Ouvrez le fichier. Si le téléphone le demande, autorisez « Installer depuis cette source ».",
-      step3: "Appuyez sur « Installer ». Les prochaines mises à jour arrivent dans l'application : Paramètres → Rechercher des mises à jour.",
+      step3: "Si un message de Google Play Protect dit que l'application est inconnue ou propose de l'analyser, c'est normal : l'application ne vient pas du Google Play Store. Elle est sûre et gratuite : appuyez sur « Plus de détails », puis sur « Installer quand même ».",
+      step4: "Appuyez sur « Installer ». Les prochaines mises à jour arrivent automatiquement dans l'application.",
+      tgTitle: "Rejoignez ma chaîne Telegram",
+      tgText: "Proposez de nouvelles applications, téléchargez toutes mes applications et recevez les mises à jour en premier.",
+      tgButton: "Rejoindre la chaîne",
       featuresTitle: "Que fait Smart Traveler ?",
       features: [
         ["Où suis-je", "Décrit votre position en détail : la rue où vous êtes, le carrefour le plus proche et ce qui vous entoure."],
@@ -203,7 +224,11 @@
       installTitle: "So installierst du es",
       step1: "Tippe auf den Download-Knopf und warte, bis er fertig ist.",
       step2: "Öffne die Datei. Falls das Handy fragt, erlaube „Aus dieser Quelle installieren“.",
-      step3: "Tippe auf „Installieren“. Künftige Updates kommen direkt in der App: Einstellungen → Nach Updates suchen.",
+      step3: "Wenn eine Meldung von Google Play Protect sagt, die App sei unbekannt, oder einen Scan vorschlägt, ist das normal: Die App kommt nicht aus dem Google Play Store. Sie ist sicher und kostenlos: Tippe auf „Weitere Details“ und dann auf „Trotzdem installieren“.",
+      step4: "Tippe auf „Installieren“. Künftige Updates kommen automatisch in der App.",
+      tgTitle: "Tritt meinem Telegram-Kanal bei",
+      tgText: "Schlag neue Apps vor, lade alle meine Apps herunter und bekomm die Updates als Erste:r.",
+      tgButton: "Dem Kanal beitreten",
       featuresTitle: "Was kann Smart Traveler?",
       features: [
         ["Wo bin ich", "Beschreibt deine Position genau: die Straße, auf der du bist, die nächste Kreuzung und was um dich herum ist."],
